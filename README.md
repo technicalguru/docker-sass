@@ -5,7 +5,7 @@ Docker image to encapsulate sass compiler for SCSS/CSS
 The image does not offer any options. Simple run the container:
 
 ```
-docker run technicalgur/sass sass -ti -- bash
+docker run -v /local-dir/workdir:/usr/local/src/sass-source -ti technicalguru/sass:latest bash
 ```
 
 You might want to mount a host directory to ```usr/local/src/sass-source``` in order to keep your work.
